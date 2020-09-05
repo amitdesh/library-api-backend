@@ -8,3 +8,118 @@
 
 
 User.create(username: "amit", password: "hello")
+
+# books = [
+#     50.times {
+#         title: Faker::Book.title,
+#         author: Faker::Book.author,
+#         image: Faker::LoremFlickr.image(size: "50x60", search_terms: ['book'])
+#         genre: Faker::Book.genre,
+#         publisher: Faker::Book.publisher,
+#         popularity: Faker::Number.within(range: 1..10)
+#     }
+# ]
+
+# for (book of books){
+#     Book.create!(book)
+# }
+
+puts "Destroying books"
+
+Book.destroy_all
+
+puts "Creating books"
+books = [
+    {
+        title: Faker::Book.title,
+        author: Faker::Book.author,
+        image: Faker::LoremFlickr.image(size: "50x60", search_terms: ['book']),
+        genre: Faker::Book.genre,
+        publisher: Faker::Book.publisher,
+        popularity: Faker::Number.within(range: 1..10)
+    },
+    {
+        title: Faker::Book.title,
+        author: Faker::Book.author,
+        image: Faker::LoremFlickr.image(size: "50x60", search_terms: ['book']),
+        genre: Faker::Book.genre,
+        publisher: Faker::Book.publisher,
+        popularity: Faker::Number.within(range: 1..10)
+    },
+    {
+        title: Faker::Book.title,
+        author: Faker::Book.author,
+        image: Faker::LoremFlickr.image(size: "50x60", search_terms: ['book']),
+        genre: Faker::Book.genre,
+        publisher: Faker::Book.publisher,
+        popularity: Faker::Number.within(range: 1..10)
+    },
+    {
+        title: Faker::Book.title,
+        author: Faker::Book.author,
+        image: Faker::LoremFlickr.image(size: "50x60", search_terms: ['book']),
+        genre: Faker::Book.genre,
+        publisher: Faker::Book.publisher,
+        popularity: Faker::Number.within(range: 1..10)
+    },
+    {
+        title: Faker::Book.title,
+        author: Faker::Book.author,
+        image: Faker::LoremFlickr.image(size: "50x60", search_terms: ['book']),
+        genre: Faker::Book.genre,
+        publisher: Faker::Book.publisher,
+        popularity: Faker::Number.within(range: 1..10)
+    },
+    {
+        title: Faker::Book.title,
+        author: Faker::Book.author,
+        image: Faker::LoremFlickr.image(size: "50x60", search_terms: ['book']),
+        genre: Faker::Book.genre,
+        publisher: Faker::Book.publisher,
+        popularity: Faker::Number.within(range: 1..10)
+    },
+    {
+        title: Faker::Book.title,
+        author: Faker::Book.author,
+        image: Faker::LoremFlickr.image(size: "50x60", search_terms: ['book']),
+        genre: Faker::Book.genre,
+        publisher: Faker::Book.publisher,
+        popularity: Faker::Number.within(range: 1..10)
+    },
+    {
+        title: Faker::Book.title,
+        author: Faker::Book.author,
+        image: Faker::LoremFlickr.image(size: "50x60", search_terms: ['book']),
+        genre: Faker::Book.genre,
+        publisher: Faker::Book.publisher,
+        popularity: Faker::Number.within(range: 1..10)
+    },
+    {
+        title: Faker::Book.title,
+        author: Faker::Book.author,
+        image: Faker::LoremFlickr.image(size: "50x60", search_terms: ['book']),
+        genre: Faker::Book.genre,
+        publisher: Faker::Book.publisher,
+        popularity: Faker::Number.within(range: 1..10)
+    },
+    {
+        title: Faker::Book.title,
+        author: Faker::Book.author,
+        image: Faker::LoremFlickr.image(size: "50x60", search_terms: ['book']),
+        genre: Faker::Book.genre,
+        publisher: Faker::Book.publisher,
+        popularity: Faker::Number.within(range: 1..10)
+    },
+    {
+        title: Faker::Book.title,
+        author: Faker::Book.author,
+        image: Faker::LoremFlickr.image(size: "50x60", search_terms: ['book']),
+        genre: Faker::Book.genre,
+        publisher: Faker::Book.publisher,
+        popularity: Faker::Number.within(range: 1..10)
+    }
+  ]
+
+  books.each do |book|
+    Book.create!(book)
+  end
