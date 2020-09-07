@@ -3013,3 +3013,791 @@ Processing by BooksController#show as */*
 Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.3ms | Allocations: 804)
 
 
+Started GET "/books/" for ::1 at 2020-09-06 10:49:26 -0400
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BooksController#index as */*
+  [1m[36mBook Load (4.4ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/books_controller.rb:4:in `index'
+Completed 200 OK in 21ms (Views: 9.9ms | ActiveRecord: 8.7ms | Allocations: 9589)
+
+
+Started GET "/books/13" for ::1 at 2020-09-06 10:49:32 -0400
+Processing by BooksController#show as */*
+  Parameters: {"id"=>"13"}
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:8:in `show'
+Completed 200 OK in 7ms (Views: 0.4ms | ActiveRecord: 0.4ms | Allocations: 1270)
+
+
+Started GET "/books/13" for ::1 at 2020-09-06 10:49:35 -0400
+Processing by BooksController#show as */*
+  Parameters: {"id"=>"13"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:8:in `show'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.2ms | Allocations: 820)
+
+
+Started GET "/books/20" for ::1 at 2020-09-06 10:49:41 -0400
+Processing by BooksController#show as */*
+  Parameters: {"id"=>"20"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:8:in `show'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.2ms | Allocations: 820)
+
+
+Started GET "/books/20" for ::1 at 2020-09-06 10:49:43 -0400
+Processing by BooksController#show as */*
+  Parameters: {"id"=>"20"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:8:in `show'
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.2ms | Allocations: 820)
+
+
+Started GET "/books/" for ::1 at 2020-09-06 10:49:53 -0400
+Processing by BooksController#index as */*
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/books_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.2ms | Allocations: 2820)
+
+
+Started GET "/books/22" for ::1 at 2020-09-06 10:49:55 -0400
+Processing by BooksController#show as */*
+  Parameters: {"id"=>"22"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:8:in `show'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.2ms | Allocations: 802)
+
+
+Started GET "/books/22" for ::1 at 2020-09-06 10:49:56 -0400
+Processing by BooksController#show as */*
+  Parameters: {"id"=>"22"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:8:in `show'
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.2ms | Allocations: 802)
+
+
+Started GET "/books/" for ::1 at 2020-09-06 13:49:38 -0400
+Processing by BooksController#index as */*
+  [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/books_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.5ms | Allocations: 2880)
+
+
+Started GET "/books/22" for ::1 at 2020-09-06 13:49:42 -0400
+Processing by BooksController#show as */*
+  Parameters: {"id"=>"22"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:8:in `show'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.3ms | Allocations: 831)
+
+
+Started GET "/books/22" for ::1 at 2020-09-06 13:49:44 -0400
+Processing by BooksController#show as */*
+  Parameters: {"id"=>"22"}
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:8:in `show'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.3ms | Allocations: 802)
+
+
+Started GET "/books/" for ::1 at 2020-09-06 13:49:51 -0400
+Processing by BooksController#index as */*
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/books_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.2ms | Allocations: 2820)
+
+
+Started GET "/books/" for ::1 at 2020-09-06 13:50:03 -0400
+Processing by BooksController#index as */*
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/books_controller.rb:4:in `index'
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.3ms | Allocations: 2822)
+
+
+Started GET "/books/22" for ::1 at 2020-09-06 13:50:08 -0400
+Processing by BooksController#show as */*
+  Parameters: {"id"=>"22"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:8:in `show'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.2ms | Allocations: 802)
+
+
+Started GET "/users/" for ::1 at 2020-09-06 18:27:06 -0400
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as */*
+  [1m[36mUser Load (4.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:6:in `index'
+Completed 200 OK in 19ms (Views: 6.5ms | ActiveRecord: 7.4ms | Allocations: 6197)
+
+
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (3.0ms)[0m  [1m[32mINSERT INTO "users" ("username", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "amit"], ["password", "hello"], ["created_at", "2020-09-06 22:29:44.758289"], ["updated_at", "2020-09-06 22:29:44.758289"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Destroy (0.8ms)[0m  [1m[31mDELETE FROM "books" WHERE "books"."id" = $1[0m  [["id", 12]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Destroy (0.3ms)[0m  [1m[31mDELETE FROM "books" WHERE "books"."id" = $1[0m  [["id", 13]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Destroy (0.2ms)[0m  [1m[31mDELETE FROM "books" WHERE "books"."id" = $1[0m  [["id", 14]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Destroy (0.3ms)[0m  [1m[31mDELETE FROM "books" WHERE "books"."id" = $1[0m  [["id", 15]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Destroy (0.2ms)[0m  [1m[31mDELETE FROM "books" WHERE "books"."id" = $1[0m  [["id", 16]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Destroy (0.2ms)[0m  [1m[31mDELETE FROM "books" WHERE "books"."id" = $1[0m  [["id", 17]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Destroy (0.1ms)[0m  [1m[31mDELETE FROM "books" WHERE "books"."id" = $1[0m  [["id", 18]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Destroy (0.1ms)[0m  [1m[31mDELETE FROM "books" WHERE "books"."id" = $1[0m  [["id", 19]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Destroy (0.2ms)[0m  [1m[31mDELETE FROM "books" WHERE "books"."id" = $1[0m  [["id", 20]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Destroy (0.3ms)[0m  [1m[31mDELETE FROM "books" WHERE "books"."id" = $1[0m  [["id", 21]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Destroy (0.1ms)[0m  [1m[31mDELETE FROM "books" WHERE "books"."id" = $1[0m  [["id", 22]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.1ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 2]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.1ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 3]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 4]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 5]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.1ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 6]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Create (0.2ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "image", "genre", "publisher", "popularity", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "The Widening Gyre"], ["author", "greg"], ["image", "https://loremflickr.com/50/60/book"], ["genre", "Comic/Graphic Novel"], ["publisher", "Ziff Davis Media"], ["popularity", "6"], ["created_at", "2020-09-06 22:29:44.950088"], ["updated_at", "2020-09-06 22:29:44.950088"]]
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Create (0.1ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "image", "genre", "publisher", "popularity", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "The Parliament of Man"], ["author", "mike"], ["image", "https://loremflickr.com/50/60/book"], ["genre", "Fanfiction"], ["publisher", "Sams Publishing"], ["popularity", "3"], ["created_at", "2020-09-06 22:29:44.955078"], ["updated_at", "2020-09-06 22:29:44.955078"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Create (0.1ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "image", "genre", "publisher", "popularity", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "The Way Through the Woods"], ["author", "mike"], ["image", "https://loremflickr.com/50/60/book"], ["genre", "Crime/Detective"], ["publisher", "Sams Publishing"], ["popularity", "7"], ["created_at", "2020-09-06 22:29:44.957595"], ["updated_at", "2020-09-06 22:29:44.957595"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Create (0.2ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "image", "genre", "publisher", "popularity", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "Wildfire at Midnight"], ["author", "greg"], ["image", "https://loremflickr.com/50/60/book"], ["genre", "Legend"], ["publisher", "Newnes"], ["popularity", "9"], ["created_at", "2020-09-06 22:29:44.960148"], ["updated_at", "2020-09-06 22:29:44.960148"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Create (0.3ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "image", "genre", "publisher", "popularity", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "Moab Is My Washpot"], ["author", "joe"], ["image", "https://loremflickr.com/50/60/book"], ["genre", "Reference book"], ["publisher", "George Routledge & Sons"], ["popularity", "4"], ["created_at", "2020-09-06 22:29:44.962786"], ["updated_at", "2020-09-06 22:29:44.962786"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Create (0.2ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "image", "genre", "publisher", "popularity", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "To a God Unknown"], ["author", "susan"], ["image", "https://loremflickr.com/50/60/book"], ["genre", "Western"], ["publisher", "T & T Clark"], ["popularity", "6"], ["created_at", "2020-09-06 22:29:44.965540"], ["updated_at", "2020-09-06 22:29:44.965540"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Create (0.2ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "image", "genre", "publisher", "popularity", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "Blithe Spirit"], ["author", "joe"], ["image", "https://loremflickr.com/50/60/book"], ["genre", "Realistic fiction"], ["publisher", "Blackie and Son Limited"], ["popularity", "7"], ["created_at", "2020-09-06 22:29:44.968182"], ["updated_at", "2020-09-06 22:29:44.968182"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Create (0.2ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "image", "genre", "publisher", "popularity", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "Eyeless in Gaza"], ["author", "joe"], ["image", "https://loremflickr.com/50/60/book"], ["genre", "Reference book"], ["publisher", "Tarpaulin Sky Press"], ["popularity", "5"], ["created_at", "2020-09-06 22:29:44.970875"], ["updated_at", "2020-09-06 22:29:44.970875"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Create (0.2ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "image", "genre", "publisher", "popularity", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "A Summer Bird-Cage"], ["author", "kevin"], ["image", "https://loremflickr.com/50/60/book"], ["genre", "Historical fiction"], ["publisher", "Caister Academic Press"], ["popularity", "10"], ["created_at", "2020-09-06 22:29:44.973470"], ["updated_at", "2020-09-06 22:29:44.973470"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Create (0.3ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "image", "genre", "publisher", "popularity", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "A Confederacy of Dunces"], ["author", "joe"], ["image", "https://loremflickr.com/50/60/book"], ["genre", "Fairy tale"], ["publisher", "Ellora's Cave"], ["popularity", "10"], ["created_at", "2020-09-06 22:29:44.977177"], ["updated_at", "2020-09-06 22:29:44.977177"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Create (0.2ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "image", "genre", "publisher", "popularity", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "That Good Night"], ["author", "greg"], ["image", "https://loremflickr.com/50/60/book"], ["genre", "Reference book"], ["publisher", "Naiad Press"], ["popularity", "8"], ["created_at", "2020-09-06 22:29:44.981582"], ["updated_at", "2020-09-06 22:29:44.981582"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Create (0.2ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "image", "genre", "publisher", "popularity", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "A Monstrous Regiment of Women"], ["author", "joe"], ["image", "https://loremflickr.com/50/60/book"], ["genre", "Fiction in verse"], ["publisher", "Ellora's Cave"], ["popularity", "8"], ["created_at", "2020-09-06 22:29:44.985891"], ["updated_at", "2020-09-06 22:29:44.985891"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Create (0.2ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "image", "genre", "publisher", "popularity", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "The Last Enemy"], ["author", "mike"], ["image", "https://loremflickr.com/50/60/book"], ["genre", "Suspense/Thriller"], ["publisher", "Focal Press"], ["popularity", "10"], ["created_at", "2020-09-06 22:29:44.990251"], ["updated_at", "2020-09-06 22:29:44.990251"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Create (0.2ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "image", "genre", "publisher", "popularity", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "Ego Dominus Tuus"], ["author", "kevin"], ["image", "https://loremflickr.com/50/60/book"], ["genre", "Fable"], ["publisher", "Nonesuch Press"], ["popularity", "6"], ["created_at", "2020-09-06 22:29:44.993954"], ["updated_at", "2020-09-06 22:29:44.993954"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Create (0.2ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "image", "genre", "publisher", "popularity", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "Fear and Trembling"], ["author", "susan"], ["image", "https://loremflickr.com/50/60/book"], ["genre", "Realistic fiction"], ["publisher", "Charles Scribner's Sons"], ["popularity", "6"], ["created_at", "2020-09-06 22:29:44.997120"], ["updated_at", "2020-09-06 22:29:44.997120"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Create (0.3ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "image", "genre", "publisher", "popularity", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "What's Become of Waring"], ["author", "greg"], ["image", "https://loremflickr.com/50/60/book"], ["genre", "Speech"], ["publisher", "BBC Books"], ["popularity", "7"], ["created_at", "2020-09-06 22:29:44.999988"], ["updated_at", "2020-09-06 22:29:44.999988"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Create (0.2ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "image", "genre", "publisher", "popularity", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "A Summer Bird-Cage"], ["author", "greg"], ["image", "https://loremflickr.com/50/60/book"], ["genre", "Tall tale"], ["publisher", "NavPress"], ["popularity", "8"], ["created_at", "2020-09-06 22:29:45.002862"], ["updated_at", "2020-09-06 22:29:45.002862"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Create (0.2ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "image", "genre", "publisher", "popularity", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "The Grapes of Wrath"], ["author", "mike"], ["image", "https://loremflickr.com/50/60/book"], ["genre", "Reference book"], ["publisher", "George H. Doran Company"], ["popularity", "9"], ["created_at", "2020-09-06 22:29:45.005562"], ["updated_at", "2020-09-06 22:29:45.005562"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Create (0.2ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "image", "genre", "publisher", "popularity", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "Terrible Swift Sword"], ["author", "kevin"], ["image", "https://loremflickr.com/50/60/book"], ["genre", "Essay"], ["publisher", "University of Chicago Press"], ["popularity", "4"], ["created_at", "2020-09-06 22:29:45.008280"], ["updated_at", "2020-09-06 22:29:45.008280"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Create (0.2ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "image", "genre", "publisher", "popularity", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "To Sail Beyond the Sunset"], ["author", "greg"], ["image", "https://loremflickr.com/50/60/book"], ["genre", "Biography/Autobiography"], ["publisher", "Liberty Fund"], ["popularity", "5"], ["created_at", "2020-09-06 22:29:45.010920"], ["updated_at", "2020-09-06 22:29:45.010920"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Create (0.3ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "image", "genre", "publisher", "popularity", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "Fame Is the Spur"], ["author", "joe"], ["image", "https://loremflickr.com/50/60/book"], ["genre", "Textbook"], ["publisher", "Atheneum Publishers"], ["popularity", "9"], ["created_at", "2020-09-06 22:29:45.013583"], ["updated_at", "2020-09-06 22:29:45.013583"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Create (0.2ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "image", "genre", "publisher", "popularity", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "Many Waters"], ["author", "joe"], ["image", "https://loremflickr.com/50/60/book"], ["genre", "Biography/Autobiography"], ["publisher", "Mandrake of Oxford"], ["popularity", "2"], ["created_at", "2020-09-06 22:29:45.016849"], ["updated_at", "2020-09-06 22:29:45.016849"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Create (0.3ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "image", "genre", "publisher", "popularity", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "An Instant In The Wind"], ["author", "kevin"], ["image", "https://loremflickr.com/50/60/book"], ["genre", "Mystery"], ["publisher", "Taunton Press"], ["popularity", "3"], ["created_at", "2020-09-06 22:29:45.019789"], ["updated_at", "2020-09-06 22:29:45.019789"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Create (0.2ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "image", "genre", "publisher", "popularity", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "Françoise Sagan"], ["author", "kevin"], ["image", "https://loremflickr.com/50/60/book"], ["genre", "Essay"], ["publisher", "Kessinger Publishing"], ["popularity", "2"], ["created_at", "2020-09-06 22:29:45.031963"], ["updated_at", "2020-09-06 22:29:45.031963"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Create (0.2ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "image", "genre", "publisher", "popularity", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "Unweaving the Rainbow"], ["author", "mike"], ["image", "https://loremflickr.com/50/60/book"], ["genre", "Comic/Graphic Novel"], ["publisher", "Golden Cockerel Press"], ["popularity", "2"], ["created_at", "2020-09-06 22:29:45.034583"], ["updated_at", "2020-09-06 22:29:45.034583"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Create (0.2ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "image", "genre", "publisher", "popularity", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "The Skull Beneath the Skin"], ["author", "kevin"], ["image", "https://loremflickr.com/50/60/book"], ["genre", "Fairy tale"], ["publisher", "Pavilion Books"], ["popularity", "7"], ["created_at", "2020-09-06 22:29:45.037090"], ["updated_at", "2020-09-06 22:29:45.037090"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Create (0.2ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "image", "genre", "publisher", "popularity", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "A Farewell to Arms"], ["author", "greg"], ["image", "https://loremflickr.com/50/60/book"], ["genre", "Fiction narrative"], ["publisher", "Hogarth Press"], ["popularity", "1"], ["created_at", "2020-09-06 22:29:45.039634"], ["updated_at", "2020-09-06 22:29:45.039634"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Create (0.1ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "image", "genre", "publisher", "popularity", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "Ego Dominus Tuus"], ["author", "greg"], ["image", "https://loremflickr.com/50/60/book"], ["genre", "Mystery"], ["publisher", "Brimstone Press"], ["popularity", "1"], ["created_at", "2020-09-06 22:29:45.042173"], ["updated_at", "2020-09-06 22:29:45.042173"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Create (0.3ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "image", "genre", "publisher", "popularity", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "That Hideous Strength"], ["author", "greg"], ["image", "https://loremflickr.com/50/60/book"], ["genre", "Fable"], ["publisher", "Harvest House"], ["popularity", "5"], ["created_at", "2020-09-06 22:29:45.044618"], ["updated_at", "2020-09-06 22:29:45.044618"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Create (0.1ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "image", "genre", "publisher", "popularity", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "Fame Is the Spur"], ["author", "joe"], ["image", "https://loremflickr.com/50/60/book"], ["genre", "Humor"], ["publisher", "St. Martin's Press"], ["popularity", "3"], ["created_at", "2020-09-06 22:29:45.047047"], ["updated_at", "2020-09-06 22:29:45.047047"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Create (0.1ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "image", "genre", "publisher", "popularity", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "Consider Phlebas"], ["author", "kevin"], ["image", "https://loremflickr.com/50/60/book"], ["genre", "Fantasy"], ["publisher", "Candlewick Press"], ["popularity", "6"], ["created_at", "2020-09-06 22:29:45.049258"], ["updated_at", "2020-09-06 22:29:45.049258"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Create (2.1ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "image", "genre", "publisher", "popularity", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "Postern of Fate"], ["author", "susan"], ["image", "https://loremflickr.com/50/60/book"], ["genre", "Mythopoeia"], ["publisher", "Brimstone Press"], ["popularity", "5"], ["created_at", "2020-09-06 22:29:45.051422"], ["updated_at", "2020-09-06 22:29:45.051422"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Create (0.1ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "image", "genre", "publisher", "popularity", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "The Soldier's Art"], ["author", "joe"], ["image", "https://loremflickr.com/50/60/book"], ["genre", "Fiction narrative"], ["publisher", "UCL Press"], ["popularity", "7"], ["created_at", "2020-09-06 22:29:45.055718"], ["updated_at", "2020-09-06 22:29:45.055718"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Create (0.2ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "image", "genre", "publisher", "popularity", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "Far From the Madding Crowd"], ["author", "kevin"], ["image", "https://loremflickr.com/50/60/book"], ["genre", "Crime/Detective"], ["publisher", "Banner of Truth Trust"], ["popularity", "7"], ["created_at", "2020-09-06 22:29:45.058136"], ["updated_at", "2020-09-06 22:29:45.058136"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Create (0.2ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "image", "genre", "publisher", "popularity", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "Have His Carcase"], ["author", "mike"], ["image", "https://loremflickr.com/50/60/book"], ["genre", "Mythopoeia"], ["publisher", "Marion Boyars Publishers"], ["popularity", "6"], ["created_at", "2020-09-06 22:29:45.060612"], ["updated_at", "2020-09-06 22:29:45.060612"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Create (0.2ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "image", "genre", "publisher", "popularity", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "Tender Is the Night"], ["author", "joe"], ["image", "https://loremflickr.com/50/60/book"], ["genre", "Tall tale"], ["publisher", "Marion Boyars Publishers"], ["popularity", "8"], ["created_at", "2020-09-06 22:29:45.063151"], ["updated_at", "2020-09-06 22:29:45.063151"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Create (0.2ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "image", "genre", "publisher", "popularity", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "Of Human Bondage"], ["author", "greg"], ["image", "https://loremflickr.com/50/60/book"], ["genre", "Realistic fiction"], ["publisher", "Andrews McMeel Publishing"], ["popularity", "1"], ["created_at", "2020-09-06 22:29:45.065602"], ["updated_at", "2020-09-06 22:29:45.065602"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Create (0.2ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "image", "genre", "publisher", "popularity", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "The Green Bay Tree"], ["author", "mike"], ["image", "https://loremflickr.com/50/60/book"], ["genre", "Fantasy"], ["publisher", "André Deutsch"], ["popularity", "2"], ["created_at", "2020-09-06 22:29:45.068143"], ["updated_at", "2020-09-06 22:29:45.068143"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Create (0.2ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "image", "genre", "publisher", "popularity", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "An Evil Cradling"], ["author", "mike"], ["image", "https://loremflickr.com/50/60/book"], ["genre", "Narrative nonfiction"], ["publisher", "Manchester University Press"], ["popularity", "4"], ["created_at", "2020-09-06 22:29:45.070695"], ["updated_at", "2020-09-06 22:29:45.070695"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Create (0.2ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "image", "genre", "publisher", "popularity", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "A Glass of Blessings"], ["author", "kevin"], ["image", "https://loremflickr.com/50/60/book"], ["genre", "Fable"], ["publisher", "Shire Books"], ["popularity", "3"], ["created_at", "2020-09-06 22:29:45.073177"], ["updated_at", "2020-09-06 22:29:45.073177"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Create (0.2ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "image", "genre", "publisher", "popularity", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "Recalled to Life"], ["author", "greg"], ["image", "https://loremflickr.com/50/60/book"], ["genre", "Humor"], ["publisher", "Dalkey Archive Press"], ["popularity", "7"], ["created_at", "2020-09-06 22:29:45.076059"], ["updated_at", "2020-09-06 22:29:45.076059"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Create (0.2ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "image", "genre", "publisher", "popularity", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "The Heart Is Deceitful Above All Things"], ["author", "mike"], ["image", "https://loremflickr.com/50/60/book"], ["genre", "Narrative nonfiction"], ["publisher", "Black Dog Publishing"], ["popularity", "8"], ["created_at", "2020-09-06 22:29:45.078756"], ["updated_at", "2020-09-06 22:29:45.078756"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Create (0.1ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "image", "genre", "publisher", "popularity", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "The Little Foxes"], ["author", "joe"], ["image", "https://loremflickr.com/50/60/book"], ["genre", "Historical fiction"], ["publisher", "Scholastic Press"], ["popularity", "8"], ["created_at", "2020-09-06 22:29:45.081373"], ["updated_at", "2020-09-06 22:29:45.081373"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Create (0.1ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "image", "genre", "publisher", "popularity", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "Fair Stood the Wind for France"], ["author", "greg"], ["image", "https://loremflickr.com/50/60/book"], ["genre", "Fantasy"], ["publisher", "Legend Books"], ["popularity", "10"], ["created_at", "2020-09-06 22:29:45.083792"], ["updated_at", "2020-09-06 22:29:45.083792"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Create (0.1ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "image", "genre", "publisher", "popularity", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "Beneath the Bleeding"], ["author", "mike"], ["image", "https://loremflickr.com/50/60/book"], ["genre", "Speech"], ["publisher", "Athabasca University Press"], ["popularity", "9"], ["created_at", "2020-09-06 22:29:45.086101"], ["updated_at", "2020-09-06 22:29:45.086101"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Create (0.3ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "image", "genre", "publisher", "popularity", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "It's a Battlefield"], ["author", "greg"], ["image", "https://loremflickr.com/50/60/book"], ["genre", "Western"], ["publisher", "Butterworth-Heinemann"], ["popularity", "5"], ["created_at", "2020-09-06 22:29:45.088282"], ["updated_at", "2020-09-06 22:29:45.088282"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Create (0.2ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "image", "genre", "publisher", "popularity", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "East of Eden"], ["author", "joe"], ["image", "https://loremflickr.com/50/60/book"], ["genre", "Narrative nonfiction"], ["publisher", "Simon & Schuster"], ["popularity", "7"], ["created_at", "2020-09-06 22:29:45.090577"], ["updated_at", "2020-09-06 22:29:45.090577"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Create (0.1ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "image", "genre", "publisher", "popularity", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "I Will Fear No Evil"], ["author", "mike"], ["image", "https://loremflickr.com/50/60/book"], ["genre", "Fiction narrative"], ["publisher", "Random House"], ["popularity", "4"], ["created_at", "2020-09-06 22:29:45.092906"], ["updated_at", "2020-09-06 22:29:45.092906"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Create (0.1ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "image", "genre", "publisher", "popularity", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "Jesting Pilate"], ["author", "mike"], ["image", "https://loremflickr.com/50/60/book"], ["genre", "Crime/Detective"], ["publisher", "Blackstaff Press"], ["popularity", "8"], ["created_at", "2020-09-06 22:29:45.099867"], ["updated_at", "2020-09-06 22:29:45.099867"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Create (0.1ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "image", "genre", "publisher", "popularity", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "Consider the Lilies"], ["author", "greg"], ["image", "https://loremflickr.com/50/60/book"], ["genre", "Speech"], ["publisher", "Reed Publishing"], ["popularity", "7"], ["created_at", "2020-09-06 22:29:45.102192"], ["updated_at", "2020-09-06 22:29:45.102192"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/users/" for ::1 at 2020-09-06 18:29:59 -0400
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:6:in `index'
+Completed 200 OK in 5ms (Views: 1.3ms | ActiveRecord: 1.2ms | Allocations: 2399)
+
+
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Destroy (0.2ms)[0m  [1m[31mDELETE FROM "books" WHERE "books"."id" = $1[0m  [["id", 23]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Destroy (0.2ms)[0m  [1m[31mDELETE FROM "books" WHERE "books"."id" = $1[0m  [["id", 24]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Destroy (0.2ms)[0m  [1m[31mDELETE FROM "books" WHERE "books"."id" = $1[0m  [["id", 25]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Destroy (0.2ms)[0m  [1m[31mDELETE FROM "books" WHERE "books"."id" = $1[0m  [["id", 26]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Destroy (0.2ms)[0m  [1m[31mDELETE FROM "books" WHERE "books"."id" = $1[0m  [["id", 27]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Destroy (0.2ms)[0m  [1m[31mDELETE FROM "books" WHERE "books"."id" = $1[0m  [["id", 28]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Destroy (0.1ms)[0m  [1m[31mDELETE FROM "books" WHERE "books"."id" = $1[0m  [["id", 29]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Destroy (0.2ms)[0m  [1m[31mDELETE FROM "books" WHERE "books"."id" = $1[0m  [["id", 30]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Destroy (0.2ms)[0m  [1m[31mDELETE FROM "books" WHERE "books"."id" = $1[0m  [["id", 31]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Destroy (0.1ms)[0m  [1m[31mDELETE FROM "books" WHERE "books"."id" = $1[0m  [["id", 32]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Destroy (0.1ms)[0m  [1m[31mDELETE FROM "books" WHERE "books"."id" = $1[0m  [["id", 33]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Destroy (0.1ms)[0m  [1m[31mDELETE FROM "books" WHERE "books"."id" = $1[0m  [["id", 34]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Destroy (0.1ms)[0m  [1m[31mDELETE FROM "books" WHERE "books"."id" = $1[0m  [["id", 35]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Destroy (0.1ms)[0m  [1m[31mDELETE FROM "books" WHERE "books"."id" = $1[0m  [["id", 36]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Destroy (0.1ms)[0m  [1m[31mDELETE FROM "books" WHERE "books"."id" = $1[0m  [["id", 37]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Destroy (0.3ms)[0m  [1m[31mDELETE FROM "books" WHERE "books"."id" = $1[0m  [["id", 38]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Destroy (0.1ms)[0m  [1m[31mDELETE FROM "books" WHERE "books"."id" = $1[0m  [["id", 39]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Destroy (0.2ms)[0m  [1m[31mDELETE FROM "books" WHERE "books"."id" = $1[0m  [["id", 40]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Destroy (0.2ms)[0m  [1m[31mDELETE FROM "books" WHERE "books"."id" = $1[0m  [["id", 41]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Destroy (0.1ms)[0m  [1m[31mDELETE FROM "books" WHERE "books"."id" = $1[0m  [["id", 42]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Destroy (0.3ms)[0m  [1m[31mDELETE FROM "books" WHERE "books"."id" = $1[0m  [["id", 43]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Destroy (0.2ms)[0m  [1m[31mDELETE FROM "books" WHERE "books"."id" = $1[0m  [["id", 44]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Destroy (0.1ms)[0m  [1m[31mDELETE FROM "books" WHERE "books"."id" = $1[0m  [["id", 45]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Destroy (0.2ms)[0m  [1m[31mDELETE FROM "books" WHERE "books"."id" = $1[0m  [["id", 46]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Destroy (0.2ms)[0m  [1m[31mDELETE FROM "books" WHERE "books"."id" = $1[0m  [["id", 47]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Destroy (0.2ms)[0m  [1m[31mDELETE FROM "books" WHERE "books"."id" = $1[0m  [["id", 48]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Destroy (0.2ms)[0m  [1m[31mDELETE FROM "books" WHERE "books"."id" = $1[0m  [["id", 49]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Destroy (0.2ms)[0m  [1m[31mDELETE FROM "books" WHERE "books"."id" = $1[0m  [["id", 50]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Destroy (0.1ms)[0m  [1m[31mDELETE FROM "books" WHERE "books"."id" = $1[0m  [["id", 51]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Destroy (0.2ms)[0m  [1m[31mDELETE FROM "books" WHERE "books"."id" = $1[0m  [["id", 52]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Destroy (0.2ms)[0m  [1m[31mDELETE FROM "books" WHERE "books"."id" = $1[0m  [["id", 53]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Destroy (0.2ms)[0m  [1m[31mDELETE FROM "books" WHERE "books"."id" = $1[0m  [["id", 54]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Destroy (0.3ms)[0m  [1m[31mDELETE FROM "books" WHERE "books"."id" = $1[0m  [["id", 55]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Destroy (0.1ms)[0m  [1m[31mDELETE FROM "books" WHERE "books"."id" = $1[0m  [["id", 56]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Destroy (0.2ms)[0m  [1m[31mDELETE FROM "books" WHERE "books"."id" = $1[0m  [["id", 57]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Destroy (0.1ms)[0m  [1m[31mDELETE FROM "books" WHERE "books"."id" = $1[0m  [["id", 58]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Destroy (0.1ms)[0m  [1m[31mDELETE FROM "books" WHERE "books"."id" = $1[0m  [["id", 59]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Destroy (0.1ms)[0m  [1m[31mDELETE FROM "books" WHERE "books"."id" = $1[0m  [["id", 60]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Destroy (0.1ms)[0m  [1m[31mDELETE FROM "books" WHERE "books"."id" = $1[0m  [["id", 61]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Destroy (0.2ms)[0m  [1m[31mDELETE FROM "books" WHERE "books"."id" = $1[0m  [["id", 62]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Destroy (0.1ms)[0m  [1m[31mDELETE FROM "books" WHERE "books"."id" = $1[0m  [["id", 63]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Destroy (0.2ms)[0m  [1m[31mDELETE FROM "books" WHERE "books"."id" = $1[0m  [["id", 64]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Destroy (0.1ms)[0m  [1m[31mDELETE FROM "books" WHERE "books"."id" = $1[0m  [["id", 65]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Destroy (0.2ms)[0m  [1m[31mDELETE FROM "books" WHERE "books"."id" = $1[0m  [["id", 66]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Destroy (0.1ms)[0m  [1m[31mDELETE FROM "books" WHERE "books"."id" = $1[0m  [["id", 67]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Destroy (0.1ms)[0m  [1m[31mDELETE FROM "books" WHERE "books"."id" = $1[0m  [["id", 68]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Destroy (0.1ms)[0m  [1m[31mDELETE FROM "books" WHERE "books"."id" = $1[0m  [["id", 69]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Destroy (0.1ms)[0m  [1m[31mDELETE FROM "books" WHERE "books"."id" = $1[0m  [["id", 70]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Destroy (0.1ms)[0m  [1m[31mDELETE FROM "books" WHERE "books"."id" = $1[0m  [["id", 71]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Destroy (0.1ms)[0m  [1m[31mDELETE FROM "books" WHERE "books"."id" = $1[0m  [["id", 72]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("username", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "amit"], ["password", "hello"], ["created_at", "2020-09-06 22:30:26.693663"], ["updated_at", "2020-09-06 22:30:26.693663"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Create (0.3ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "image", "genre", "publisher", "popularity", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "A Swiftly Tilting Planet"], ["author", "greg"], ["image", "https://loremflickr.com/50/60/book"], ["genre", "Realistic fiction"], ["publisher", "Bellevue Literary Press"], ["popularity", "4"], ["created_at", "2020-09-06 22:30:26.795568"], ["updated_at", "2020-09-06 22:30:26.795568"]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Create (0.2ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "image", "genre", "publisher", "popularity", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "The Glory and the Dream"], ["author", "susan"], ["image", "https://loremflickr.com/50/60/book"], ["genre", "Reference book"], ["publisher", "Mapin Publishing"], ["popularity", "3"], ["created_at", "2020-09-06 22:30:26.799225"], ["updated_at", "2020-09-06 22:30:26.799225"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Create (0.2ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "image", "genre", "publisher", "popularity", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "Blood's a Rover"], ["author", "joe"], ["image", "https://loremflickr.com/50/60/book"], ["genre", "Fanfiction"], ["publisher", "Harvill Press at Random House"], ["popularity", "4"], ["created_at", "2020-09-06 22:30:26.802183"], ["updated_at", "2020-09-06 22:30:26.802183"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Create (0.2ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "image", "genre", "publisher", "popularity", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "The Needle's Eye"], ["author", "greg"], ["image", "https://loremflickr.com/50/60/book"], ["genre", "Comic/Graphic Novel"], ["publisher", "Chatto and Windus"], ["popularity", "2"], ["created_at", "2020-09-06 22:30:26.804946"], ["updated_at", "2020-09-06 22:30:26.804946"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Create (0.2ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "image", "genre", "publisher", "popularity", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "The Road Less Traveled"], ["author", "susan"], ["image", "https://loremflickr.com/50/60/book"], ["genre", "Historical fiction"], ["publisher", "Cisco Press"], ["popularity", "4"], ["created_at", "2020-09-06 22:30:26.807663"], ["updated_at", "2020-09-06 22:30:26.807663"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Create (0.3ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "image", "genre", "publisher", "popularity", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "The Mermaids Singing"], ["author", "kevin"], ["image", "https://loremflickr.com/50/60/book"], ["genre", "Classic"], ["publisher", "Booktrope"], ["popularity", "10"], ["created_at", "2020-09-06 22:30:26.810508"], ["updated_at", "2020-09-06 22:30:26.810508"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Create (0.2ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "image", "genre", "publisher", "popularity", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "This Lime Tree Bower"], ["author", "kevin"], ["image", "https://loremflickr.com/50/60/book"], ["genre", "Fanfiction"], ["publisher", "Hachette Book Group USA"], ["popularity", "8"], ["created_at", "2020-09-06 22:30:26.813340"], ["updated_at", "2020-09-06 22:30:26.813340"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Create (0.1ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "image", "genre", "publisher", "popularity", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "The House of Mirth"], ["author", "greg"], ["image", "https://loremflickr.com/50/60/book"], ["genre", "Fable"], ["publisher", "Book League of America"], ["popularity", "10"], ["created_at", "2020-09-06 22:30:26.816100"], ["updated_at", "2020-09-06 22:30:26.816100"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Create (0.1ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "image", "genre", "publisher", "popularity", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "Clouds of Witness"], ["author", "susan"], ["image", "https://loremflickr.com/50/60/book"], ["genre", "Fiction in verse"], ["publisher", "Heyday Books"], ["popularity", "3"], ["created_at", "2020-09-06 22:30:26.818627"], ["updated_at", "2020-09-06 22:30:26.818627"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Create (0.1ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "image", "genre", "publisher", "popularity", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "As I Lay Dying"], ["author", "greg"], ["image", "https://loremflickr.com/50/60/book"], ["genre", "Legend"], ["publisher", "Ziff Davis Media"], ["popularity", "8"], ["created_at", "2020-09-06 22:30:26.821091"], ["updated_at", "2020-09-06 22:30:26.821091"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Create (0.1ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "image", "genre", "publisher", "popularity", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "Great Work of Time"], ["author", "mike"], ["image", "https://loremflickr.com/50/60/book"], ["genre", "Mystery"], ["publisher", "Broadview Press"], ["popularity", "9"], ["created_at", "2020-09-06 22:30:26.823545"], ["updated_at", "2020-09-06 22:30:26.823545"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Create (0.3ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "image", "genre", "publisher", "popularity", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "A Confederacy of Dunces"], ["author", "susan"], ["image", "https://loremflickr.com/50/60/book"], ["genre", "Horror"], ["publisher", "Ellora's Cave"], ["popularity", "4"], ["created_at", "2020-09-06 22:30:26.826077"], ["updated_at", "2020-09-06 22:30:26.826077"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Create (0.1ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "image", "genre", "publisher", "popularity", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "Mother Night"], ["author", "kevin"], ["image", "https://loremflickr.com/50/60/book"], ["genre", "Realistic fiction"], ["publisher", "Atheneum Publishers"], ["popularity", "2"], ["created_at", "2020-09-06 22:30:26.828809"], ["updated_at", "2020-09-06 22:30:26.828809"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Create (0.1ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "image", "genre", "publisher", "popularity", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "Now Sleeps the Crimson Petal"], ["author", "greg"], ["image", "https://loremflickr.com/50/60/book"], ["genre", "Mystery"], ["publisher", "University of Akron Press"], ["popularity", "9"], ["created_at", "2020-09-06 22:30:26.831330"], ["updated_at", "2020-09-06 22:30:26.831330"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Create (0.1ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "image", "genre", "publisher", "popularity", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "Dance Dance Dance"], ["author", "greg"], ["image", "https://loremflickr.com/50/60/book"], ["genre", "Fairy tale"], ["publisher", "Broadview Press"], ["popularity", "10"], ["created_at", "2020-09-06 22:30:26.833829"], ["updated_at", "2020-09-06 22:30:26.833829"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Create (0.4ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "image", "genre", "publisher", "popularity", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "Surprised by Joy"], ["author", "mike"], ["image", "https://loremflickr.com/50/60/book"], ["genre", "Comic/Graphic Novel"], ["publisher", "Cengage Learning"], ["popularity", "9"], ["created_at", "2020-09-06 22:30:26.836302"], ["updated_at", "2020-09-06 22:30:26.836302"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Create (0.2ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "image", "genre", "publisher", "popularity", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "Fear and Trembling"], ["author", "joe"], ["image", "https://loremflickr.com/50/60/book"], ["genre", "Reference book"], ["publisher", "University of Michigan Press"], ["popularity", "1"], ["created_at", "2020-09-06 22:30:26.839076"], ["updated_at", "2020-09-06 22:30:26.839076"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Create (0.2ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "image", "genre", "publisher", "popularity", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "Recalled to Life"], ["author", "greg"], ["image", "https://loremflickr.com/50/60/book"], ["genre", "Horror"], ["publisher", "City Lights Publishers"], ["popularity", "5"], ["created_at", "2020-09-06 22:30:26.841798"], ["updated_at", "2020-09-06 22:30:26.841798"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Create (0.1ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "image", "genre", "publisher", "popularity", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "Those Barren Leaves, Thrones, Dominations"], ["author", "joe"], ["image", "https://loremflickr.com/50/60/book"], ["genre", "Speech"], ["publisher", "Black Dog Publishing"], ["popularity", "3"], ["created_at", "2020-09-06 22:30:26.844411"], ["updated_at", "2020-09-06 22:30:26.844411"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Create (0.1ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "image", "genre", "publisher", "popularity", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "His Dark Materials"], ["author", "mike"], ["image", "https://loremflickr.com/50/60/book"], ["genre", "Mythology"], ["publisher", "DAW Books"], ["popularity", "7"], ["created_at", "2020-09-06 22:30:26.846995"], ["updated_at", "2020-09-06 22:30:26.846995"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Create (0.2ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "image", "genre", "publisher", "popularity", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "Look to Windward"], ["author", "mike"], ["image", "https://loremflickr.com/50/60/book"], ["genre", "Science fiction"], ["publisher", "Chronicle Books"], ["popularity", "8"], ["created_at", "2020-09-06 22:30:26.849506"], ["updated_at", "2020-09-06 22:30:26.849506"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Create (0.3ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "image", "genre", "publisher", "popularity", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "Bury My Heart at Wounded Knee"], ["author", "kevin"], ["image", "https://loremflickr.com/50/60/book"], ["genre", "Tall tale"], ["publisher", "Carnegie Mellon University Press"], ["popularity", "9"], ["created_at", "2020-09-06 22:30:26.852024"], ["updated_at", "2020-09-06 22:30:26.852024"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Create (0.1ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "image", "genre", "publisher", "popularity", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "Cabbages and Kings"], ["author", "mike"], ["image", "https://loremflickr.com/50/60/book"], ["genre", "Narrative nonfiction"], ["publisher", "Taunton Press"], ["popularity", "10"], ["created_at", "2020-09-06 22:30:26.862052"], ["updated_at", "2020-09-06 22:30:26.862052"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Create (0.1ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "image", "genre", "publisher", "popularity", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "For a Breath I Tarry"], ["author", "susan"], ["image", "https://loremflickr.com/50/60/book"], ["genre", "Suspense/Thriller"], ["publisher", "G-Unit Books"], ["popularity", "4"], ["created_at", "2020-09-06 22:30:26.864266"], ["updated_at", "2020-09-06 22:30:26.864266"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Create (0.3ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "image", "genre", "publisher", "popularity", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "The Sun Also Rises"], ["author", "susan"], ["image", "https://loremflickr.com/50/60/book"], ["genre", "Horror"], ["publisher", "Carlton Books"], ["popularity", "9"], ["created_at", "2020-09-06 22:30:26.866477"], ["updated_at", "2020-09-06 22:30:26.866477"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Create (0.1ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "image", "genre", "publisher", "popularity", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "The Curious Incident of the Dog in the Night-Time"], ["author", "joe"], ["image", "https://loremflickr.com/50/60/book"], ["genre", "Historical fiction"], ["publisher", "J. M. Dent"], ["popularity", "10"], ["created_at", "2020-09-06 22:30:26.868793"], ["updated_at", "2020-09-06 22:30:26.868793"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Create (0.1ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "image", "genre", "publisher", "popularity", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "The Little Foxes"], ["author", "mike"], ["image", "https://loremflickr.com/50/60/book"], ["genre", "Metafiction"], ["publisher", "D. Appleton & Company"], ["popularity", "10"], ["created_at", "2020-09-06 22:30:26.870960"], ["updated_at", "2020-09-06 22:30:26.870960"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Create (0.3ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "image", "genre", "publisher", "popularity", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "No Highway"], ["author", "joe"], ["image", "https://loremflickr.com/50/60/book"], ["genre", "Humor"], ["publisher", "Zed Books"], ["popularity", "3"], ["created_at", "2020-09-06 22:30:26.873283"], ["updated_at", "2020-09-06 22:30:26.873283"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Create (0.1ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "image", "genre", "publisher", "popularity", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "Postern of Fate"], ["author", "susan"], ["image", "https://loremflickr.com/50/60/book"], ["genre", "Mythopoeia"], ["publisher", "DAW Books"], ["popularity", "10"], ["created_at", "2020-09-06 22:30:26.875739"], ["updated_at", "2020-09-06 22:30:26.875739"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Create (0.1ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "image", "genre", "publisher", "popularity", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "The Skull Beneath the Skin"], ["author", "mike"], ["image", "https://loremflickr.com/50/60/book"], ["genre", "Reference book"], ["publisher", "Carlton Books"], ["popularity", "1"], ["created_at", "2020-09-06 22:30:26.878117"], ["updated_at", "2020-09-06 22:30:26.878117"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Create (0.1ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "image", "genre", "publisher", "popularity", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "This Side of Paradise"], ["author", "susan"], ["image", "https://loremflickr.com/50/60/book"], ["genre", "Folklore"], ["publisher", "Gefen Publishing House"], ["popularity", "3"], ["created_at", "2020-09-06 22:30:26.880589"], ["updated_at", "2020-09-06 22:30:26.880589"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Create (0.2ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "image", "genre", "publisher", "popularity", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "Cabbages and Kings"], ["author", "susan"], ["image", "https://loremflickr.com/50/60/book"], ["genre", "Speech"], ["publisher", "Tachyon Publications"], ["popularity", "8"], ["created_at", "2020-09-06 22:30:26.883181"], ["updated_at", "2020-09-06 22:30:26.883181"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Create (0.2ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "image", "genre", "publisher", "popularity", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "The Golden Bowl"], ["author", "susan"], ["image", "https://loremflickr.com/50/60/book"], ["genre", "Fable"], ["publisher", "Taylor & Francis"], ["popularity", "6"], ["created_at", "2020-09-06 22:30:26.885700"], ["updated_at", "2020-09-06 22:30:26.885700"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Create (0.2ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "image", "genre", "publisher", "popularity", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "The Stars' Tennis Balls"], ["author", "susan"], ["image", "https://loremflickr.com/50/60/book"], ["genre", "Western"], ["publisher", "Focal Press"], ["popularity", "10"], ["created_at", "2020-09-06 22:30:26.888262"], ["updated_at", "2020-09-06 22:30:26.888262"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Create (0.2ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "image", "genre", "publisher", "popularity", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "Tender Is the Night"], ["author", "kevin"], ["image", "https://loremflickr.com/50/60/book"], ["genre", "Short story"], ["publisher", "Brimstone Press"], ["popularity", "1"], ["created_at", "2020-09-06 22:30:26.890769"], ["updated_at", "2020-09-06 22:30:26.890769"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Create (0.2ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "image", "genre", "publisher", "popularity", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "Nine Coaches Waiting"], ["author", "mike"], ["image", "https://loremflickr.com/50/60/book"], ["genre", "Mythology"], ["publisher", "Da Capo Press"], ["popularity", "3"], ["created_at", "2020-09-06 22:30:26.893275"], ["updated_at", "2020-09-06 22:30:26.893275"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Create (0.1ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "image", "genre", "publisher", "popularity", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "Little Hands Clapping"], ["author", "kevin"], ["image", "https://loremflickr.com/50/60/book"], ["genre", "Essay"], ["publisher", "Packt Publishing"], ["popularity", "4"], ["created_at", "2020-09-06 22:30:26.895731"], ["updated_at", "2020-09-06 22:30:26.895731"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Create (0.1ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "image", "genre", "publisher", "popularity", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "Look Homeward, Angel"], ["author", "joe"], ["image", "https://loremflickr.com/50/60/book"], ["genre", "Realistic fiction"], ["publisher", "Del Rey Books"], ["popularity", "5"], ["created_at", "2020-09-06 22:30:26.898100"], ["updated_at", "2020-09-06 22:30:26.898100"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Create (0.1ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "image", "genre", "publisher", "popularity", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "An Instant In The Wind"], ["author", "joe"], ["image", "https://loremflickr.com/50/60/book"], ["genre", "Realistic fiction"], ["publisher", "Horizon Scientific Press"], ["popularity", "2"], ["created_at", "2020-09-06 22:30:26.900369"], ["updated_at", "2020-09-06 22:30:26.900369"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Create (0.3ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "image", "genre", "publisher", "popularity", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "A Swiftly Tilting Planet"], ["author", "kevin"], ["image", "https://loremflickr.com/50/60/book"], ["genre", "Reference book"], ["publisher", "Orion Books"], ["popularity", "7"], ["created_at", "2020-09-06 22:30:26.902519"], ["updated_at", "2020-09-06 22:30:26.902519"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Create (0.1ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "image", "genre", "publisher", "popularity", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "The Stars' Tennis Balls"], ["author", "susan"], ["image", "https://loremflickr.com/50/60/book"], ["genre", "Metafiction"], ["publisher", "Tarpaulin Sky Press"], ["popularity", "4"], ["created_at", "2020-09-06 22:30:26.904789"], ["updated_at", "2020-09-06 22:30:26.904789"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Create (0.1ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "image", "genre", "publisher", "popularity", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "Number the Stars"], ["author", "greg"], ["image", "https://loremflickr.com/50/60/book"], ["genre", "Narrative nonfiction"], ["publisher", "Virago Press"], ["popularity", "5"], ["created_at", "2020-09-06 22:30:26.907044"], ["updated_at", "2020-09-06 22:30:26.907044"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Create (0.1ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "image", "genre", "publisher", "popularity", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "The Torment of Others"], ["author", "susan"], ["image", "https://loremflickr.com/50/60/book"], ["genre", "Biography/Autobiography"], ["publisher", "Elsevier"], ["popularity", "8"], ["created_at", "2020-09-06 22:30:26.909295"], ["updated_at", "2020-09-06 22:30:26.909295"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Create (0.1ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "image", "genre", "publisher", "popularity", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "The Wind's Twelve Quarters"], ["author", "kevin"], ["image", "https://loremflickr.com/50/60/book"], ["genre", "Western"], ["publisher", "Martinus Nijhoff Publishers"], ["popularity", "8"], ["created_at", "2020-09-06 22:30:26.911489"], ["updated_at", "2020-09-06 22:30:26.911489"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Create (0.1ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "image", "genre", "publisher", "popularity", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "Of Human Bondage"], ["author", "kevin"], ["image", "https://loremflickr.com/50/60/book"], ["genre", "Western"], ["publisher", "Focal Press"], ["popularity", "3"], ["created_at", "2020-09-06 22:30:26.913710"], ["updated_at", "2020-09-06 22:30:26.913710"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Create (0.1ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "image", "genre", "publisher", "popularity", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "In a Dry Season"], ["author", "susan"], ["image", "https://loremflickr.com/50/60/book"], ["genre", "Mystery"], ["publisher", "Jarrolds Publishing"], ["popularity", "4"], ["created_at", "2020-09-06 22:30:26.915968"], ["updated_at", "2020-09-06 22:30:26.915968"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Create (0.3ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "image", "genre", "publisher", "popularity", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "The Parliament of Man"], ["author", "susan"], ["image", "https://loremflickr.com/50/60/book"], ["genre", "Fable"], ["publisher", "Hackett Publishing Company"], ["popularity", "8"], ["created_at", "2020-09-06 22:30:26.918343"], ["updated_at", "2020-09-06 22:30:26.918343"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Create (0.1ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "image", "genre", "publisher", "popularity", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "Gone with the Wind"], ["author", "greg"], ["image", "https://loremflickr.com/50/60/book"], ["genre", "Mythology"], ["publisher", "David & Charles"], ["popularity", "10"], ["created_at", "2020-09-06 22:30:26.920751"], ["updated_at", "2020-09-06 22:30:26.920751"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Create (0.1ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "image", "genre", "publisher", "popularity", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "Jacob Have I Loved"], ["author", "greg"], ["image", "https://loremflickr.com/50/60/book"], ["genre", "Legend"], ["publisher", "FabJob"], ["popularity", "7"], ["created_at", "2020-09-06 22:30:26.923131"], ["updated_at", "2020-09-06 22:30:26.923131"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBook Create (0.2ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "image", "genre", "publisher", "popularity", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "The Road Less Traveled"], ["author", "mike"], ["image", "https://loremflickr.com/50/60/book"], ["genre", "Fanfiction"], ["publisher", "University of Chicago Press"], ["popularity", "1"], ["created_at", "2020-09-06 22:30:26.925395"], ["updated_at", "2020-09-06 22:30:26.925395"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/users/" for ::1 at 2020-09-06 18:30:38 -0400
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:6:in `index'
+Completed 200 OK in 12ms (Views: 5.7ms | ActiveRecord: 4.2ms | Allocations: 5732)
+
+
+Started GET "/users/" for ::1 at 2020-09-06 18:31:19 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:6:in `index'
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.2ms | Allocations: 953)
+
+
+Started GET "/users/" for ::1 at 2020-09-06 18:52:39 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.7ms | Allocations: 1005)
+
+
+Started GET "/users/" for ::1 at 2020-09-06 18:52:40 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.3ms | Allocations: 953)
+
+
+Started GET "/users/" for ::1 at 2020-09-06 18:52:40 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.2ms | Allocations: 953)
+
+
+Started GET "/users/" for ::1 at 2020-09-06 18:52:40 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.3ms | Allocations: 935)
+
+
+Started GET "/users/" for ::1 at 2020-09-06 18:52:41 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.2ms | Allocations: 935)
+
+
+Started GET "/users/" for ::1 at 2020-09-06 18:52:41 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.3ms | Allocations: 935)
+
+
+Started GET "/users/" for ::1 at 2020-09-06 18:52:42 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.2ms | Allocations: 935)
+
+
+Started GET "/users/" for ::1 at 2020-09-06 18:52:42 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.3ms | Allocations: 935)
+
+
+Started GET "/users/" for ::1 at 2020-09-06 18:52:47 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:6:in `index'
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.2ms | Allocations: 935)
+
+
+Started GET "/users/" for ::1 at 2020-09-06 18:52:47 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.2ms | Allocations: 935)
+
+
+Started GET "/users/" for ::1 at 2020-09-06 18:53:00 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.2ms | Allocations: 935)
+
+
+Started GET "/users/" for ::1 at 2020-09-06 18:54:13 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:6:in `index'
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.2ms | Allocations: 935)
+
+
+Started GET "/users/" for ::1 at 2020-09-06 18:57:41 -0400
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:6:in `index'
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.2ms | Allocations: 935)
+
+
+Started POST "/users/" for ::1 at 2020-09-06 18:58:59 -0400
+  
+AbstractController::ActionNotFound (The action 'create' could not be found for UsersController):
+  
+actionpack (6.0.3.2) lib/abstract_controller/base.rb:131:in `process'
+actionpack (6.0.3.2) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.0.3.2) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.0.3.2) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.0.3.2) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.3.2) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.3.2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.2) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+activerecord (6.0.3.2) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'

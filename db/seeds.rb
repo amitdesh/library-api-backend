@@ -7,13 +7,15 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-User.create(username: "amit", password: "hello")
 
-puts "Destroying books"
+puts "Destroying books and users"
 
 Book.destroy_all
+User.destroy_all
 
-puts "Creating books"
+puts "Creating books and users"
+
+User.create(username: "amit", password: "hello")
 
 authors = ["mike", "susan", "greg", "joe", "kevin"]
 
