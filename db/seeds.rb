@@ -8,10 +8,11 @@
 
 
 
-puts "Destroying books and users"
+puts "Destroying books, users and checkouts"
 
 Book.destroy_all
 User.destroy_all
+Checkout.destroy_all
 
 puts "Creating books and users"
 
