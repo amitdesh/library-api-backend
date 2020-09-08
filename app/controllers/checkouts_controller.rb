@@ -17,6 +17,12 @@ class CheckoutsController < ApplicationController
     end
 
 
+    def destroy
+        checkout = Checkout.find(params[:id])
+        checkout.destroy
+    end
+
+
 
     private
 
