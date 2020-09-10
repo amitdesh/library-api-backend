@@ -25,10 +25,19 @@ authors = ["mike", "susan", "greg", "joe", "kevin"]
         {
             title: Faker::Book.title,
             author: authors.sample,
-            image: Faker::LoremFlickr.image(size: "50x60", search_terms: ['book']),
+            image: Faker::LoremFlickr.image(size: "200x150", search_terms: ['book']),
             genre: Faker::Book.genre,
             publisher: Faker::Book.publisher,
             popularity: Faker::Number.within(range: 1..10)
         }
     )
     end
+
+    10.times do
+        Checkout.create(
+            {
+                user_id: 1,
+                book_id: Book.all.sample.id
+            }
+        )
+        end
