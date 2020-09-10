@@ -8,4 +8,9 @@ class BooksController < ApplicationController
         book = Book.find(params[:id])
         render json: book
     end
+
+    def popauthor
+        author = Book.popularity
+        render json: author
+    end
 end
