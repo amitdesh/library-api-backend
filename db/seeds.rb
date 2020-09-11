@@ -23,12 +23,12 @@ authors = ["mike", "susan", "greg", "joe", "kevin"]
 
     books = [
         {
-            title: "To Kill A Mockingbird",
-            author: "Harper Lee",
-            image: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/To_Kill_a_Mockingbird_%28first_edition_cover%29.jpg/1200px-To_Kill_a_Mockingbird_%28first_edition_cover%29.jpg",
+            title: "Homage to Catalonia",
+            author: "George Orwell",
+            image: "https://upload.wikimedia.org/wikipedia/en/b/b6/Homage_to_Catalonia%2C_Cover%2C_1st_Edition.jpg",
             genre: "Fiction",
-            publisher: "Harper Perennial Modern Classics",
-            popularity: 9
+            publisher: "no one",
+            popularity: 10
         },
         {
             title: "1984",
@@ -77,14 +77,6 @@ authors = ["mike", "susan", "greg", "joe", "kevin"]
             genre: "Science Fiction",
             publisher: "New American Library",
             popularity: 10
-        },
-        {
-            title: "Catch-22",
-            author: "Joseph Heller",
-            image: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1463157317i/168668._UY475_SS475_.jpg",
-            genre: "Fiction",
-            publisher: "Simon & Schuster",
-            popularity: 6
         },
         {
             title: "Grapes of Wrath",
@@ -181,6 +173,14 @@ authors = ["mike", "susan", "greg", "joe", "kevin"]
             genre: "Fantasy",
             publisher: "Vintage",
             popularity: 7
+        },
+        {
+            title: "Burmese Days",
+            author: "George Orwell",
+            image: "https://upload.wikimedia.org/wikipedia/en/a/a3/Burmese_days.jpg",
+            genre: "Fiction",
+            publisher: "no one",
+            popularity: 8
         },
         {
             title: "One Hundred Years of Solitude",
