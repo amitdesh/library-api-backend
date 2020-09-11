@@ -268,7 +268,7 @@ authors = ["mike", "susan", "greg", "joe", "kevin"]
         Book.create(book)
     end
 
-    10.times do
+    5.times do
         Checkout.create(
             {
                 user_id: 1,
